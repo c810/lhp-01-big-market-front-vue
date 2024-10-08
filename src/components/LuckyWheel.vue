@@ -73,7 +73,7 @@
   onMounted(() => {
     // const queryParams = new URLSearchParams(window.location.search);
     // const strategyId = Number(queryParams.get('strategyId'));
-    const strategyId = 100006;
+    const strategyId = 100001;
     if (strategyId) {
       fetchPrizes(strategyId);
     }
@@ -85,7 +85,7 @@
     setTimeout(async () => {
       // const queryParams = new URLSearchParams(window.location.search);
       // const strategyId = Number(queryParams.get('strategyId'));
-      const strategyId = 100006;
+      const strategyId = 100001;
       const prizeIndex = await fetchRandomRaffle(strategyId);
       if (prizeIndex !== undefined) {
         myLucky.value.stop(prizeIndex);
